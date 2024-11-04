@@ -1,14 +1,126 @@
 ---
-import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
 ---
 
-<Layout title="404 Not Found">
+<Layout title="Sistema de Gestión de Almacenes">
   <Container>
-    <div class="min-h-[calc(100vh-16rem)] flex items-center justify-center">
-      <div class="mt-16 text-center">
-        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">Inicio</h1>
-      </div>
+    <!-- Encabezado de sección -->
+    <Sectionhead>
+      <Fragment slot="title">Sistema de Gestión de Almacenes</Fragment>
+      <Fragment slot="desc">Optimiza tus inventarios y mejora la eficiencia operativa.</Fragment>
+    </Sectionhead>
+
+    <!-- Portada -->
+    <!-- <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">Portada</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Título del tema: Sistema de Gestión de Almacenes
+      </p>
+    </div> -->
+
+    <!-- Tabla de contenido -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">Tabla de Contenido</h2>
+      <ul class="list-decimal list-inside text-lg leading-relaxed text-slate-500 mt-4">
+        <li>Introducción</li>
+        <li>Antecedentes</li>
+        <li>Planteamiento del problema</li>
+        <li>Árbol de problemas</li>
+        <li>Formulación del problema</li>
+        <li>Propósito del estudio</li>
+        <li>Método, medios e instrumentos de investigación</li>
+        <li>Planificación de actividades</li>
+      </ul>
     </div>
+
+    <!-- Introducción -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800">Introducción</h3>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Hoy en día, las empresas deben implementar procesos eficientes para optimizar su desempeño y satisfacer las necesidades del mercado debido a la creciente globalización y la intensa competencia económica. El Control de Almacenes se convierte por tanto en la máxima prioridad, ya que garantiza la correcta disposición de los suministros, materiales y equipos, todos ellos esenciales para el funcionamiento diario de cualquier organización.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        El diseño de un sistema de control de almacenes debe ser sensible a los niveles de operación involucrados y a la información requerida, con el objetivo de potenciar la toma de decisiones. Se aborda la optimización de la gestión de almacenes a través de un sistema que aligera los procesos de abastecimiento, almacenamiento y provisión de materiales y herramientas, mejorando así el rendimiento y la calidad del servicio.
+      </p>
+      </div>
+
+    <!-- Antecedentes -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800">Antecedentes</h3>
+      <p class="text-lg leading-relaxed text-slate-500">
+        En la última década, el crecimiento del comercio electrónico y la globalización han impulsado a las empresas a mejorar sus procesos de gestión de inventarios. Se han implementado tecnologías como el RFID y sistemas de software avanzados para el seguimiento de productos. Sin embargo, muchas empresas aún enfrentan desafíos significativos relacionados con la gestión de su inventario, incluyendo la falta de visibilidad en tiempo real y el exceso de stock.
+      </p>
+      
+    </div>
+
+    <!-- Planteamiento del problema -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800">Planteamiento del problema</h3>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Muchas empresas carecen de un control de inventario efectivo y, en consecuencia, incurren en gastos innecesarios (exceso o falta de existencias). Esto hace que las operaciones se vuelvan ineficientes y afecta directamente la satisfacción del cliente. De ahí la necesidad de abordar y corregir los problemas para mejorar la gestión de los almacenes.
+      </p>
+    </div>
+
+    <!-- Árbol de problemas -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800">Árbol de problemas</h3>
+      <p class="text-lg leading-relaxed text-slate-500">
+          ...
+      </p>
+    </div>
+
+    <!-- Formulación del problema -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">Formulación del Problema</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        ¿Cómo puede un sistema automatizado mejorar el control y la gestión de inventarios para optimizar los recursos de las empresas y, a su vez, reducir los costos operativos y aumentar la satisfacción del cliente?
+      </p>
+    </div>
+    
+
+    <!-- Propósito del estudio -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800">Propósito del estudio</h3>
+      <h4 class="text-lg font-semibold">Objetivos generales</h4>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Diseñar un sistema de gestión de almacenes que permita mejorar el control de inventarios y reducir costos operativos.
+      </p>
+      <h4 class="text-lg font-semibold">Objetivos específicos</h4>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500 mt-4">
+        <li>Realizar un estudio mediante un control interno sobre los procesos de control de almacenes.</li>
+        <li>Definir las bases para el diseño del sistema de control de almacenes.</li>
+        <li>Automatizar el registro de entradas y salidas de productos.</li>
+        <li>Implementar un sistema de alertas para productos con bajo stock.</li>
+        <li>Desarrollar herramientas de generación de reportes para la toma de decisiones informadas.</li>
+      </ul>
+    </div>
+
+    <!-- Método, medios e instrumentos de investigación -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800">Método, medios e instrumentos de investigación</h3>
+      <p class="text-lg leading-relaxed text-slate-500">
+        La investigación se llevará a cabo mediante la revisión de literatura relevante, entrevistas con expertos en gestión de inventarios. 
+        <!-- Se utilizarán encuestas para recopilar datos sobre las necesidades y desafíos de los usuarios en la gestión de inventarios. -->
+      </p>
+    </div>
+
+    <!-- Planificación de actividades -->
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800">Planificación de actividades</h3>
+      <p class="text-lg leading-relaxed text-slate-500">
+        <!-- La planificación se dividirá en varias fases, cada una con tareas específicas y plazos. Un diagrama de Gantt se utilizará para visualizar las actividades programadas a lo largo del tiempo, asegurando un seguimiento adecuado del progreso y cumplimiento de los plazos. -->
+      </p>
+    </div>
+
+    <!-- Blog -->
+    <!-- <div class="mt-12">
+      <h3 class="text-2xl font-semibold text-gray-800">...</h3>
+      <p class="text-lg leading-relaxed text-slate-500 mt-4">
+        .
+      </p>
+    </div> -->
   </Container>
 </Layout>

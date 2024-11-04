@@ -1,57 +1,58 @@
 ---
-import { getCollection } from "astro:content";
-import { Picture } from "astro:assets";
+import { getCollection } from "astro:content"; // Si necesitas obtener datos de una colección
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
-// Filter team entries with 'draft: false' & date before current date
-const publishedTeamMembers = await getCollection("team", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
+// Si tienes algún contenido dinámico que mostrar, descomenta lo siguiente
+// const publishedFeatures = await getCollection("features", ({ data }) => !data.draft);
 ---
 
-<Layout title="About">
+<Layout title="Sistema de Gestión de Almacenes">
   <Container>
+    <!-- Encabezado de sección -->
     <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
+      <Fragment slot="title">Sistema de Gestión de Almacenes</Fragment>
+      <Fragment slot="desc">Optimiza tus inventarios y mejora la eficiencia operativa.</Fragment>
     </Sectionhead>
 
+    <!-- Introducción -->
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with Astro.
+        Bienvenido al Sistema de Gestión de Almacenes
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
+        Este sistema es crucial para la optimización de inventarios y la reducción de costos operativos. Permite gestionar entradas y salidas de productos de manera eficiente.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
-      {
-        publishedTeamMembers.map((teamMemberEntry) => (
-          <div class="group">
-            <div class="w-full aspect-square">
-              <Picture
-                src={teamMemberEntry.data.avatar.src}
-                alt={teamMemberEntry.data.avatar.alt}
-                sizes="(max-width: 800px) 100vw, 400px"
-                width={400}
-                height={400}
-                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
-              />
-            </div>
 
-            <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
-              <h3 class="text-sm text-slate-500">
-                {teamMemberEntry.data.title}
-              </h3>
-            </div>
-          </div>
-        ))
-      }
+    <!-- Objetivos -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-semibold text-gray-800">Objetivos</h3>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500 mt-4">
+        <li>Crear un sistema automatizado para mejorar el control de inventarios.</li>
+        <li>Registrar entradas y salidas de productos.</li>
+        <li>Implementar alertas para productos con bajo stock.</li>
+        <li>Generar reportes para la toma de decisiones.</li>
+      </ul>
+    </div>
+
+    <!-- Características principales -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-semibold text-gray-800">Características Principales</h3>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500 mt-4">
+        <li>Registro de entradas y salidas</li>
+        <li>Alertas de bajo stock</li>
+        <li>Generación de reportes</li>
+      </ul>
+    </div>
+
+    <!-- Blog o Actualizaciones (opcional) -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-semibold text-gray-800">Blog</h3>
+      <p class="text-lg leading-relaxed text-slate-500 mt-4">
+        Mantente al día con las últimas actualizaciones sobre el desarrollo del sistema y las mejores prácticas en la gestión de almacenes.
+      </p>
     </div>
   </Container>
 </Layout>
