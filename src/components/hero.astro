@@ -1,17 +1,16 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
-import LogoImage from "assets/logo.jpg";
+import heroImage from "assets/hero.png"; // Asegúrate de que esta imagen sea relevante.
+import LogoImage from "assets/logo.jpg"; // Asegúrate de que esta imagen sea relevante.
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 px-4 md:order-1 hidden md:block">
     <Picture
       src={LogoImage}
-      alt="Astronaut in the air"
+      alt="Logo del Sistema de Gestión de Almacenes"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
@@ -19,34 +18,28 @@ import { Icon } from "astro-icon/components";
     />
   </div>
   <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
       Sistema de Gestión de Almacenes
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugit numquam deserunt laudantium porro sapiente magni molestiae voluptas, incidunt consequatur, corrupti quia earum quisquam velit rem cupiditate consectetur possimus similique.
+    <p class="text-lg mt-4 text-slate-600 max-w-xl text-justify">
+      Una solución diseñada para optimizar la administración de inventarios mediante el uso de modelos de análisis y diseño. 
+      Este sistema permitirá gestionar productos de manera estructurada, facilitando la toma de decisiones informadas.
+      <br />
+      Con el objetivo de mejorar la eficiencia operativa, nuestra plataforma ofrece herramientas para el seguimiento en tiempo real de los inventarios, generación de informes detallados y gestión de pedidos.
+      <br />
+      Además, este sistema está orientado a facilitar la integración con otros sistemas existentes, asegurando una transición fluida y una mejora continua en la gestión de almacenes.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <!-- <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-         Download for Free
-      </Link>
+    
+    
+    <!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
+        href="https://github.com/tu_usuario/tu_repositorio"
         class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
-      </Link> -->
-    </div>
+        target="_blank"
+        rel="noopener">
+        <Icon class="text-white w-4 h-4" name="bx:bxl-github" />
+        Repositorio en GitHub
+      </Link>
+    </div> -->
   </div>
 </main>
