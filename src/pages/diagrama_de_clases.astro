@@ -1,0 +1,27 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="Diagrama de Clases">
+  <Container>
+    <div class=" flex items-center justify-center">
+      <div class="mt-16 text-center">
+        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">Diagrama de Clases</h1>
+        <p class="mt-4 text-lg text-gray-600">
+          El Diagrama de Clases es una representación gráfica que muestra las clases, atributos, métodos y relaciones entre ellas en un sistema. Este diagrama es fundamental para modelar el diseño del software y entender las interacciones y responsabilidades de cada objeto en el sistema.
+        </p>
+      </div>
+    </div>
+
+    <!-- Diagrama de Clases -->
+    <div class="mt-8 text-center">
+      <h2 class="text-2xl font-semibold text-slate-700">Diagrama de Clases</h2>
+      <img src="/images/diagrama_de_clases.png" alt="Diagrama de Clases" class="mx-auto my-4 max-w-full h-auto"/>
+      <p class="mt-4 text-lg text-gray-600">
+        Este diagrama representa las clases del sistema y sus relaciones, mostrando cómo los objetos interactúan entre sí a nivel de clases.
+      </p>
+    </div>
+
+  </Container>
+</Layout>

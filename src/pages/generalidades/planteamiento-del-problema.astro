@@ -1,0 +1,29 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Planteamiento del Problema">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Planteamiento del Problema</Fragment>
+      <Fragment slot="desc">Identificación de los desafíos en la gestión de inventarios del Minimarket Mamilus.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <p class="text-lg leading-relaxed text-slate-500">
+        El Minimarket Mamilus enfrenta problemas críticos relacionados con la gestión manual de inventarios, que afectan tanto la eficiencia operativa como la satisfacción del cliente. Entre las principales dificultades se encuentran:
+      </p>
+      <ul class="list-disc list-inside text-lg leading-relaxed text-slate-500 mt-4">
+        <li>Falta de control preciso: El manejo manual genera inconsistencias en los registros, lo que dificulta conocer el estado real de las existencias.</li>
+        <li>Riesgo de desabastecimiento o sobrestock: La falta de datos confiables complica la planificación adecuada, provocando la pérdida de ventas por falta de productos o gastos innecesarios por acumulación excesiva.</li>
+        <li>Baja eficiencia operativa: El tiempo invertido en registrar, verificar y actualizar inventarios manualmente retrasa otros procesos importantes del negocio.</li>
+        <li>Limitada generación de reportes: Los métodos actuales no permiten analizar patrones de ventas o comportamiento de productos, lo que dificulta la toma de decisiones estratégicas.</li>
+      </ul>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Estos problemas afectan la operatividad interna y repercuten en la experiencia del cliente y la rentabilidad del negocio. Por lo tanto, resulta imperativo diseñar un sistema de gestión de inventarios que optimice estos procesos, minimice errores y brinde una base sólida para la toma de decisiones informadas.
+      </p>
+    </div>
+  </Container>
+</Layout>

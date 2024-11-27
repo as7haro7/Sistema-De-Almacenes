@@ -1,0 +1,26 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Planificación de Actividades">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Planificación de Actividades</Fragment>
+      <Fragment slot="desc">Cronograma del proyecto con fases y tiempos estimados.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <h2 class="text-xl font-semibold text-slate-700 mt-6">Diagrama de Gantt</h2>
+      
+      <!-- Diagrama de Gantt -->
+      <div class="mt-8">
+        <!-- <img src="/assets/images/gantt-diagram.png" alt="Diagrama de Gantt" class="w-full h-auto" /> -->
+        <img src="/images/gantt-diagram_1.png" alt="Diagrama de Gantt" class="w-full h-auto" />
+        <img src="/images/gantt-diagram_2.png" alt="Diagrama de Gantt" class="w-full h-auto" />
+      </div>
+      
+    </div>
+  </Container>
+</Layout>

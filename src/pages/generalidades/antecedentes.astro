@@ -1,0 +1,26 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Antecedentes">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Antecedentes</Fragment>
+      <Fragment slot="desc">Explorando el contexto del Minimarket Mamilus y sus desafíos.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <p class="text-lg leading-relaxed text-slate-500">
+        El Minimarket Mamilus, establecido en un entorno local, se dedica a la comercialización de productos de consumo diario como alimentos, bebidas, artículos de limpieza y productos básicos del hogar. A pesar de ser un negocio en crecimiento, enfrenta desafíos comunes en su operatividad debido a la falta de un sistema estructurado para la gestión de inventarios.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Actualmente, el control de productos se lleva a cabo de forma manual mediante registros en libros o hojas de cálculo, lo que dificulta el seguimiento de las entradas y salidas de productos, y aumenta el riesgo de errores humanos.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Los avances tecnológicos han permitido que incluso los pequeños negocios accedan a sistemas de gestión de inventarios que facilitan la automatización de procesos, la reducción de costos operativos y la mejora en la toma de decisiones. Sin embargo, muchas empresas, como el Minimarket Mamilus, no han implementado este tipo de soluciones, ya sea por desconocimiento o por percibirlas como costosas y complejas.
+      </p>
+    </div>
+  </Container>
+</Layout>

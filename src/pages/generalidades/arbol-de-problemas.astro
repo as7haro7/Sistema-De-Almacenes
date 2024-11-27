@@ -1,0 +1,68 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Árbol de Problemas">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Árbol de Problemas</Fragment>
+      <Fragment slot="desc">Visualización de las causas y efectos relacionados con el problema principal.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <p class="text-lg leading-relaxed text-slate-700 text-justify">
+        El Árbol de Problemas ilustra las causas fundamentales y las consecuencias del problema central identificado en el Minimarket Mamilus. Esto permite visualizar las conexiones entre los factores que afectan la gestión de inventarios y sus repercusiones en el negocio.
+      </p>
+
+      <p class="text-lg leading-relaxed text-slate-700 text-justify mt-4">
+        <strong>Problema central:</strong> Gestión ineficiente de inventarios en el Minimarket Mamilus.
+      </p>
+
+      <p class="text-lg leading-relaxed text-slate-700 text-justify mt-4">
+        <strong>Causas principales:</strong>
+        <ul class="list-disc pl-6 mt-2">
+          <li>Falta de automatización: El registro y control se realiza de forma manual.</li>
+          <li>Errores humanos frecuentes: La dependencia de métodos manuales incrementa los riesgos de omisiones e inexactitudes.</li>
+          <li>Ausencia de herramientas de análisis: No se dispone de software o sistemas que permitan generar reportes o proyecciones sobre las existencias y las ventas.</li>
+          <li>Falta de capacitación: El personal no está familiarizado con el uso de herramientas tecnológicas para la gestión de inventarios.</li>
+        </ul>
+      </p>
+
+      <p class="text-lg leading-relaxed text-slate-700 text-justify mt-4">
+        <strong>Consecuencias principales:</strong>
+        <ul class="list-disc pl-6 mt-2">
+          <li>Desabastecimiento o sobrestock: Se genera una mala planificación de pedidos, afectando la disponibilidad de productos o generando pérdidas por acumulación excesiva.</li>
+          <li>Aumento de costos operativos: El tiempo y los recursos invertidos en gestionar inventarios de forma manual afectan la eficiencia del negocio.</li>
+          <li>Baja satisfacción del cliente: La falta de productos esenciales reduce la confianza y fidelidad de los consumidores.</li>
+          <li>Pérdidas económicas: Las ineficiencias en el control de inventarios impactan directamente en los márgenes de ganancia del negocio.</li>
+        </ul>
+      </p>
+
+      <!-- Ejemplo de imagen -->
+      <div class="w-full flex justify-center mt-8">
+        <img
+          src="/images/arbol_problemas_ejemplo.png"
+          alt="Ejemplo de árbol de problemas"
+          class="rounded-lg shadow-lg w-3/4"
+        />
+      </div>
+      <p class="text-lg text-center text-slate-400 mt-4">
+        Arbol de Problemas
+      </p>
+
+      <!-- Espacio para otra imagen si es necesario -->
+      <div class="w-full flex justify-center mt-8">
+        <img
+          src="/images/arbol_problemas_ejemplo2.png"
+          alt="Otro ejemplo de árbol de problemas"
+          class="rounded-lg shadow-lg w-3/4"
+        />
+      </div>
+      <p class="text-lg text-center text-slate-400 mt-4">
+        Arbol de Problemas
+      </p>
+    </div>
+  </Container>
+</Layout>

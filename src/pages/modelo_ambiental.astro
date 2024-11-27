@@ -1,0 +1,55 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Modelo Ambiental">
+  <Container>
+    <!-- <div class="min-h-[calc(100vh-16rem)] flex items-center justify-center"> -->
+    <div class=" flex items-center justify-center">
+      <div class="mt-16 text-center">
+        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">Modelo Ambiental</h1>
+      </div>
+    </div>
+    
+    <!-- Declaración del propósito -->
+    <div class="mt-8">
+      <h2 class="text-2xl font-semibold text-slate-700">Declaración del Propósito</h2>
+      <p class="text-lg text-slate-600 mt-4">
+        El Sistema de Almacenamiento del Minimarket MAMIL’US está diseñado para optimizar la gestión del inventario y los flujos de productos, centralizando las operaciones de entrada, almacenamiento y salida de mercancías. Este sistema asegura un control eficiente de los niveles de stock, la trazabilidad de productos y el cumplimiento de estándares operativos. Además, facilita la comunicación entre los diferentes actores involucrados, como administradores, personal operativo, proveedores, clientes corporativos, y servicios de auditoría y pagos. Su propósito principal es garantizar que el inventario del minimarket sea gestionado de manera precisa y transparente, apoyando la toma de decisiones estratégicas y mejorando la productividad general del negocio.
+      </p>
+    </div>
+
+    <!-- Diagrama de contexto -->
+    <div class="mt-8">
+      <h2 class="text-2xl font-semibold text-slate-700">Diagrama de Contexto</h2>
+      <div class="mt-4">
+        <!-- Aquí va la imagen del diagrama de contexto -->
+        <img src="/images/diagrama-de-contexto.jpg" alt="Diagrama de Contexto" class="w-full h-auto" />
+      </div>
+    </div>
+
+    <!-- Lista de Acontecimientos -->
+    <div class="mt-8">
+      <h2 class="text-2xl font-semibold text-slate-700">Lista de Acontecimientos</h2>
+      <ol class="list-decimal pl-8 mt-4 text-slate-600">
+        <li><strong>Configuración Inicial del Almacén:</strong> <br /> Actor: Administrador del Minimarket. Acción: Define categorías de productos, ubicaciones físicas y rutas internas para el almacenamiento eficiente. Resultado: El almacén queda configurado según las necesidades del minimarket.</li>
+        <li><strong>Recepción de Productos:</strong> <br /> Actor: Personal del Almacén. Acción: Registra la entrada de productos entregados por los proveedores, verificando cantidades, lotes y condiciones de entrega. Resultado: Los productos se registran en el sistema y se asignan a ubicaciones específicas.</li>
+        <li><strong>Notificación de Envíos:</strong> <br /> Actor: Proveedor. Acción: Envía detalles sobre los productos enviados al minimarket, incluyendo cantidades, fechas y lotes. Resultado: El sistema recibe la información y prepara el registro de recepción.</li>
+        <li><strong>Actualización de Inventario:</strong> <br /> Actor: Sistema. Acción: Ajusta automáticamente los niveles de stock tras la recepción de productos o ventas realizadas. Resultado: El inventario refleja el estado actual en tiempo real.</li>
+        <li><strong>Generación de Alertas:</strong> <br /> Actor: Sistema. Acción: Envía notificaciones al administrador y al supervisor sobre: Stock bajo, Exceso de inventario, Productos próximos a vencer. Resultado: Los actores relevantes toman acciones correctivas.</li>
+        <li><strong>Clasificación y Ubicación de Productos:</strong> <br /> Actor: Personal del Almacén. Acción: Organiza los productos en estanterías según las categorías y ubicaciones definidas. Resultado: Los productos quedan correctamente almacenados para facilitar su localización.</li>
+        <li><strong>Registro de Salidas:</strong> <br /> Actor: Personal del Almacén. Acción: Registra la salida de productos hacia el área de ventas o por despachos solicitados por clientes corporativos. Resultado: El inventario se actualiza con las cantidades retiradas.</li>
+        <li><strong>Solicitud de Productos por Clientes Corporativos:</strong> <br /> Actor: Cliente Corporativo. Acción: Solicita productos en grandes cantidades o pedidos especiales. Resultado: El sistema confirma disponibilidad y genera un pedido interno para su preparación.</li>
+        <li><strong>Supervisión de Operaciones:</strong> <br /> Actor: Supervisor de Almacén. Acción: Supervisa las actividades del personal, verificando entradas, salidas y el estado general del inventario. Resultado: Las operaciones diarias se desarrollan de manera fluida y eficiente.</li>
+        <li><strong>Reportes Detallados de Movimientos:</strong> <br /> Actor: Auditoría Interna. Acción: Solicita reportes sobre movimientos de productos, trazabilidad y niveles de inventario. Resultado: El sistema genera informes precisos para su análisis.</li>
+        <li><strong>Coordinación de Devoluciones:</strong> <br /> Actor: Proveedor. Acción: Recibe notificaciones sobre devoluciones de productos dañados o no conformes. Resultado: Los ajustes correspondientes se realizan en el sistema.</li>
+        <li><strong>Generación de Facturas:</strong> <br /> Actor: Sistema de Pagos. Acción: Registra y procesa facturas de proveedores asociadas a los productos entregados. Resultado: Los pagos quedan registrados y los proveedores reciben confirmaciones.</li>
+        <li><strong>Ajustes en Inventario por Auditoría:</strong> <br /> Actor: Supervisor de Almacén. Acción: Realiza ajustes en el inventario físico cuando se detectan discrepancias tras auditorías internas. Resultado: El inventario se alinea con los datos reales.</li>
+        <li><strong>Generación de Informes Estratégicos:</strong> <br /> Actor: Administrador del Minimarket. Acción: Solicita reportes avanzados sobre rotación de productos, niveles de stock y patrones de consumo. Resultado: Los informes permiten planificar reabastecimientos y definir estrategias de venta.</li>
+      </ol>
+    </div>
+
+  </Container>
+</Layout>

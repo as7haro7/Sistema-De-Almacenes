@@ -1,0 +1,40 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="Modelo de Comportamiento">
+  <Container>
+    <!-- <div class="min-h-[calc(100vh-16rem)] flex items-center justify-center"> -->
+    <div class=" flex items-center justify-center">
+      <div class="mt-16 text-center">
+        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">Modelo de Comportamiento</h1>
+      </div>
+    </div>
+
+    <!-- Diagrama de Flujo de Datos -->
+    <div class="mt-8">
+      <h2 class="text-2xl font-semibold text-slate-700">Diagrama de Flujo de Datos</h2>
+      <p class="mt-4 text-lg text-gray-600">
+        El Diagrama de Flujo de Datos (DFD) es una herramienta visual utilizada para representar el flujo de información dentro del sistema. En el caso de este proyecto, el DFD permite identificar cómo los datos se mueven entre los diferentes actores del proceso de gestión de inventarios del Minimarket MAMIL’US, como la recepción de productos, la actualización de inventario y la generación de alertas.
+      </p>
+      <div class="mt-4">
+        <!-- Imagen reducida del Diagrama de Flujo de Datos -->
+        <img src="/images/diagrama-flujo-datos.png" alt="Diagrama de Flujo de Datos" class="w-3/4 mx-auto my-4 h-auto" />
+      </div>
+    </div>
+
+    <!-- Diagrama ER -->
+    <div class="mt-8">
+      <h2 class="text-2xl font-semibold text-slate-700">Diagrama Entidad-Relación (ER)</h2>
+      <p class="mt-4 text-lg text-gray-600">
+        El Diagrama Entidad-Relación (ER) muestra las relaciones entre las distintas entidades del sistema, como los productos, proveedores, inventarios y transacciones. Este diagrama es crucial para modelar la base de datos del sistema, facilitando la creación de un esquema relacional que apoye la correcta gestión de los datos y la trazabilidad de los movimientos de inventarios.
+      </p>
+      <div class="mt-4">
+        <!-- Imagen reducida del Diagrama ER -->
+        <img src="/images/diagrama-er.png" alt="Diagrama Entidad-Relación (ER)" class="w-3/4 mx-auto my-4 h-auto" />
+      </div>
+    </div>
+
+  </Container>
+</Layout>

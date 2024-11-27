@@ -6,33 +6,49 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
 {
-    title: "Inicio",
-    path: "/inicio",
-  },
+  title: "Marco Teórico",
+  path: "#",
+  children: [
+    { title: "Introducción", path: "/generalidades/introduccion" },
+    { title: "Antecedentes", path: "/generalidades/antecedentes" },
+    { title: "Planteamiento del Problema", path: "/generalidades/planteamiento-del-problema" },
+    { title: "Árbol de Problemas", path: "/generalidades/arbol-de-problemas" },
+    { title: "Formulación del Problema", path: "/generalidades/formulacion-del-problema" },
+    // { title: "Objetivo General", path: "/generalidades/objetivo-general" },
+    // { title: "Objetivos Específicos", path: "/generalidades/objetivos-especificos" },
+    { title: "Método, Medios e Instrumentos de Investigación", path: "/generalidades/metodo-medios-instrumentos" },
+    // { title: "Justificación del método elegido", path: "/generalidades/justificacion-metodo" },
+    // { title: "Herramientas y técnicas utilizadas", path: "/generalidades/herramientas-tecnicas" },
+    // { title: "Alcances del proyecto", path: "/generalidades/alcances-del-proyecto" },
+    { title: "Planificación de Actividades", path: "/generalidades/planificacion-actividades" },
+    // { title: "Diagrama Gantt", path: "/generalidades/diagrama-gantt" },
+  ],
+},
+
   {
-    title: "Analisis estructurado",
+    title: "Análisis y Diseño Estructurado",
     path: "#",
     children: [
-      { title: "Modelo Esencial", path: "/modelo_esencial" },
-      { title: "Modelo de Implementacion", path: "/modelo_de_implementacion" },
+      { title: "Modelo Ambiental", path: "/modelo_ambiental" },
+      { title: "Modelo de comportamiento", path: "/modelo_de_comportamiento" },
       // { title: "Dropdown Submenu", path: "#" },
       // { title: "404 Page", path: "/404" },
     ],
   },
-  
+
   {
-    title: "Modelado a objetos",
-    path: "/modelado_a_objetos",
+    title: "Análisis y Diseño Orientado a Objetos",
+    path: "#",
+    children: [
+      { title: "Diagrama de Clases", path: "/diagrama_de_clases" },
+      { title: "Casos de Uso", path: "/casos_de_uso" },     
+    ],
   },
-  {
-    title: "marco teorico",
-    path: "/marco_teorico",
-  },
+
   {
     title: "Video",
     path: "/video",
   },
- 
 ];
 ---
 

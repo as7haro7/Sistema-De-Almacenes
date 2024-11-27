@@ -1,0 +1,117 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="Casos de Uso">
+    <Container>
+      <div class="flex items-center justify-center">
+        <div class="mt-16 text-center">
+          <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">Casos de Uso</h1>
+          <p class="mt-4 text-lg text-gray-600">
+            Los Casos de Uso describen cómo los usuarios interactúan con el sistema y qué funcionalidades se esperan de él. Son esenciales para comprender los requisitos funcionales y las interacciones de los actores con el sistema.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Diagrama de Casos de Uso de Negocio -->
+      <div class="mt-8 text-center">
+        <h2 class="text-2xl font-semibold text-slate-700">Diagrama de Casos de Uso de Negocio</h2>
+        <img src="/path/to/diagrama_casos_uso_negocio.png" alt="Diagrama de Casos de Uso de Negocio" class="mx-auto my-4 max-w-full h-auto"/>
+        <p class="mt-4 text-lg text-gray-600">
+          Este diagrama describe los casos de uso a nivel de negocio, mostrando cómo los actores interactúan con el sistema en un contexto más amplio de operaciones y procesos empresariales.
+        </p>
+      </div>
+  
+      <!-- Diagrama de Casos de Uso de Sistemas -->
+      <div class="mt-8 text-center">
+        <h2 class="text-2xl font-semibold text-slate-700">Diagrama de Casos de Uso de Sistemas</h2>
+        <img src="/path/to/diagrama_casos_uso_sistemas.png" alt="Diagrama de Casos de Uso de Sistemas" class="mx-auto my-4 max-w-full h-auto"/>
+        <p class="mt-4 text-lg text-gray-600">
+          Este diagrama muestra cómo los actores interactúan con los sistemas internos, detallando las funcionalidades específicas que se requieren para cada tipo de usuario o actor.
+        </p>
+      </div>
+  
+      <!-- Tabla de Casos de Uso -->
+      <div class="mt-8">
+        <h2 class="text-2xl font-semibold text-slate-700">Tabla de Casos de Uso</h2>
+        <table class="min-w-full mt-4 table-auto border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="px-6 py-3 text-left text-sm font-medium text-gray-700 border-b border-gray-300">Caso de Uso</th>
+              <th class="px-6 py-3 text-left text-sm font-medium text-gray-700 border-b border-gray-300">Actor</th>
+              <th class="px-6 py-3 text-left text-sm font-medium text-gray-700 border-b border-gray-300">Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">Iniciar sesión</td>
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">Administrador, Empleado</td>
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">El usuario ingresa sus credenciales para acceder al sistema y gestionar el inventario.</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">Registrar producto</td>
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">Empleado, Administrador</td>
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">El empleado o administrador registra un nuevo producto en el inventario, ingresando detalles como nombre, precio y cantidad.</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">Realizar venta</td>
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">Cliente, Empleado</td>
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">El empleado registra una venta, actualizando el inventario con los productos vendidos.</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">Generar reporte de inventario</td>
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">Administrador</td>
+              <td class="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-300">El administrador genera un reporte detallado del inventario actual, mostrando productos disponibles, ventas y compras realizadas.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <!-- Casos de Uso en Texto -->
+      <div class="mt-8">
+        <h2 class="text-2xl font-semibold text-slate-700">Casos de Uso en Texto</h2>
+        
+        <!-- Caso de Uso Procesar Venta -->
+        <div class="mt-6 p-6 border-2 border-gray-300 rounded-lg">
+          <h3 class="text-xl font-semibold text-gray-800">Procesar Venta en Minimarket Mamilus</h3>
+          <p class="mt-2 text-lg text-gray-600">
+            <strong>Código:</strong> CU001
+          </p>
+          <p class="mt-2 text-lg text-gray-600">
+            <strong>Actores:</strong> Cliente (iniciador), Cajero (actor principal), Sistema de Inventario (actor secundario)
+          </p>
+          <p class="mt-2 text-lg text-gray-600">
+            <strong>Propósito:</strong> Procesar una venta, recibir el pago y actualizar el inventario de productos en el sistema.
+          </p>
+          <p class="mt-2 text-lg text-gray-600">
+            <strong>Resumen:</strong> Un cliente llega al minimarket con productos que desea comprar. El cajero registra los productos y el pago, ya sea en efectivo, tarjeta o cheque. Al completar la transacción, se emite una factura y el inventario se actualiza automáticamente. El cliente se lleva los productos comprados.
+          </p>
+          <p class="mt-2 text-lg text-gray-600">
+            <strong>Secuencia Normal de Eventos:</strong>
+          </p>
+          <ol class="list-decimal pl-6">
+            <li>El Cliente llega al minimarket con productos para comprar.</li>
+            <li>El Cajero escanea el código de barras de los productos o introduce manualmente el identificador del producto.</li>
+            <li>El Cajero presiona el botón "Finalizar captura" para concluir el registro de productos.</li>
+            <li>El Cajero solicita el pago del Cliente.</li>
+            <li>El Cliente elige el método de pago (efectivo, tarjeta de crédito, cheque).</li>
+            <li>Si el pago es en efectivo, el Cajero registra la cantidad entregada.</li>
+            <li>El Cajero recibe el pago y actualiza el inventario.</li>
+            <li>El Cajero emite una factura.</li>
+            <li>El Cliente recibe la factura y se marcha con los productos.</li>
+          </ol>
+          <p class="mt-2 text-lg text-gray-600">
+            <strong>Cursos Alternos:</strong>
+          </p>
+          <ul class="list-disc pl-6">
+            <li>Si el identificador del producto es incorrecto, el sistema muestra un mensaje de error.</li>
+            <li>Si el cliente no tiene suficiente dinero, el sistema cancela la transacción y ofrece opciones para otro método de pago.</li>
+            <li>Si el pago con tarjeta es rechazado, el sistema ofrece otro método de pago.</li>
+            <li>Si el cheque no es aprobado, el sistema solicita otro método de pago.</li>
+          </ul>
+        </div>
+      </div>
+    </Container>
+  </Layout>
+  

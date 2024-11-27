@@ -1,0 +1,72 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Método, Medios e Instrumentos de Investigación">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Método, Medios e Instrumentos de Investigación</Fragment>
+      <Fragment slot="desc">Enfoque metodológico y herramientas utilizadas para el análisis y diseño del sistema.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <h2 class="text-xl font-semibold text-slate-700 mt-6">Justificación del Método Elegido</h2>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        Se emplea una metodología combinada estructurada y orientada a objetos para abordar tanto el análisis funcional como el diseño técnico del sistema. Este enfoque permite identificar y modelar las necesidades actuales del Minimarket Mamilus, mientras que facilita la implementación de un sistema robusto y adaptable. 
+        La elección de herramientas cualitativas y cuantitativas en la etapa de investigación asegura un análisis integral del problema, combinando la percepción de los usuarios y el análisis técnico de los procesos. Esto permitirá diseñar un sistema personalizado que resuelva los desafíos específicos del negocio.
+      </p>
+
+      <h2 class="text-xl font-semibold text-slate-700 mt-6">Herramientas y Técnicas Utilizadas</h2>
+
+      <h3 class="text-lg font-semibold text-slate-700 mt-4">Técnicas de Recolección de Datos:</h3>
+      <ul class="list-disc pl-6 mt-2 text-lg text-slate-700">
+        <li>Entrevistas estructuradas: Para identificar problemas en los procesos actuales de inventario y expectativas del sistema.</li>
+        <li>Encuestas: Dirigidas al personal para evaluar el conocimiento y las prácticas relacionadas con la gestión de inventarios.</li>
+        <li>Observación directa: Seguimiento de las operaciones diarias para mapear los procesos existentes.</li>
+        <li>Revisión documental: Análisis de registros actuales de inventarios, ventas y compras para identificar patrones y fallas.</li>
+      </ul>
+
+      <h3 class="text-lg font-semibold text-slate-700 mt-6">Herramientas de Análisis y Diseño:</h3>
+      <ul class="list-disc pl-6 mt-2 text-lg text-slate-700">
+        <li>Diagrama de contexto y DFD: Representar el sistema actual y proponer flujos de información.</li>
+        <li>Diagramas UML (clases, casos de uso, secuencia): Modelar el diseño técnico y funcional del sistema.</li>
+        <li>Modelado de base de datos: Creación del esquema relacional para el almacenamiento de datos del inventario.</li>
+        <li>Prototipos de interfaz: Creación de pantallas y menús preliminares para probar la usabilidad.</li>
+      </ul>
+
+      <h3 class="text-lg font-semibold text-slate-700 mt-6">Herramientas Tecnológicas:</h3>
+      <ul class="list-disc pl-6 mt-2 text-lg text-slate-700">
+        <li>Bases de datos relacionales como MySQL o PostgreSQL para la gestión de datos.</li>
+        <li>Lenguajes de programación como Python (Django, Flask) o Java (Spring Boot) para el desarrollo del sistema.</li>
+        <li>Herramientas de diseño como Lucidchart o Figma para diagramas y prototipos.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold text-slate-700 mt-6">Alcances del Proyecto</h2>
+
+      <h3 class="text-lg font-semibold text-slate-700 mt-4">Funcionales:</h3>
+      <ul class="list-disc pl-6 mt-2 text-lg text-slate-700">
+        <li>Registro y actualización de productos con información detallada (códigos, nombres, cantidades, fechas de ingreso, precios, etc.).</li>
+        <li>Control automático de entradas y salidas de inventario.</li>
+        <li>Generación de reportes dinámicos para análisis de existencias, ventas y tendencias.</li>
+        <li>Alertas automatizadas para productos con bajo stock o fechas de vencimiento próximas.</li>
+      </ul>
+
+      <h3 class="text-lg font-semibold text-slate-700 mt-6">Técnicos:</h3>
+      <ul class="list-disc pl-6 mt-2 text-lg text-slate-700">
+        <li>Sistema accesible desde dispositivos en red local o remota.</li>
+        <li>Interfaz gráfica amigable, intuitiva y adaptada a usuarios con conocimientos básicos en tecnología.</li>
+        <li>Seguridad en los datos mediante autenticación de usuarios y copias de respaldo periódicas.</li>
+        <li>Diseño modular que permita la integración de futuras funcionalidades, como ventas o gestión de proveedores.</li>
+      </ul>
+
+      <h3 class="text-lg font-semibold text-slate-700 mt-6">Organizacionales:</h3>
+      <ul class="list-disc pl-6 mt-2 text-lg text-slate-700">
+        <li>Capacitación del personal mediante sesiones prácticas y manuales de usuario.</li>
+        <li>Incorporación progresiva del sistema para reducir el impacto en la operación diaria del minimarket.</li>
+        <li>Evaluación continua del sistema para implementar mejoras basadas en el feedback del personal y resultados observados.</li>
+      </ul>
+    </div>
+  </Container>
+</Layout>

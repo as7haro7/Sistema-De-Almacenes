@@ -1,0 +1,39 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Formulación del Problema">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Formulación del Problema</Fragment>
+      <Fragment slot="desc">Definición clara del problema central.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-16">
+      <p class="text-lg leading-relaxed text-slate-700 text-justify">
+        En el Minimarket Mamilus, la gestión actual de inventarios se realiza de manera manual, lo que genera inconsistencias en los registros, dificulta el seguimiento de productos y aumenta los riesgos de errores humanos. Estas deficiencias resultan en problemas como el desabastecimiento o el sobrestock de productos, pérdidas económicas, y una menor satisfacción del cliente.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-700 text-justify mt-4">
+        Por lo tanto, surge la necesidad de desarrollar un sistema de gestión de inventarios automatizado que permita optimizar los procesos relacionados con el control de existencias, garantizando una operación más eficiente, precisa y alineada con las necesidades del negocio.
+      </p>
+      
+      <h2 class="text-xl font-semibold text-slate-700 mt-6">Objetivo General</h2>
+      <p class="text-lg leading-relaxed text-slate-700 text-justify mt-2">
+        Diseñar un sistema de gestión de inventarios automatizado para el Minimarket Mamilus que mejore la eficiencia operativa, reduzca errores humanos y facilite la toma de decisiones estratégicas mediante datos confiables y en tiempo real.
+      </p>
+
+      <h2 class="text-xl font-semibold text-slate-700 mt-6">Objetivos Específicos</h2>
+      <ul class="list-disc pl-6 mt-2 text-lg text-slate-700">
+        <li>Analizar el estado actual de la gestión de inventarios: Identificar los procesos manuales existentes, los principales problemas y las necesidades del minimarket mediante entrevistas, encuestas y observación directa.</li>
+        <li>Definir los requerimientos funcionales y no funcionales: Documentar las características esenciales que debe tener el sistema, como funcionalidades, tiempos de respuesta y usabilidad.</li>
+        <li>Diseñar un modelo estructurado y orientado a objetos del sistema: Elaborar diagramas de contexto, diagramas de flujo de datos (DFD), diagramas de clases y casos de uso para modelar los componentes y el funcionamiento del sistema.</li>
+        <li>Implementar herramientas tecnológicas de gestión de inventarios: Desarrollar el sistema utilizando bases de datos relacionales y tecnologías modernas de programación, asegurando un diseño escalable y eficiente.</li>
+        <li>Capacitar al personal: Diseñar e impartir un programa de formación para el uso del sistema, garantizando su correcta adopción y operación.</li>
+        <li>Evaluar el desempeño del sistema: Realizar pruebas funcionales y de rendimiento para validar su efectividad y realizar ajustes según los resultados obtenidos.</li>
+      </ul>
+
+    </div>
+  </Container>
+</Layout>
